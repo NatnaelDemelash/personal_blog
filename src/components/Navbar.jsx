@@ -1,5 +1,6 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-1.png';
 import { FiSearch } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const currentDate = new Date();
@@ -14,20 +15,18 @@ const Navbar = () => {
   const formattedDate = currentDate.toLocaleDateString('en-us', options);
 
   return (
-    <header className="w-full h-[70px] z-50 p-4 bg-[#D6EAF8]">
+    <header className="w-full h-[70px] z-50 p-2 bg-[#D6EAF8]">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center">
           <img
             src={logo}
             alt="logo"
-            width={45}
-            className="border-2 border-slate-700 rounded-full p-1"
+            width={55}
+            className="border-2 border-slate-700 rounded-full"
           />
           <nav>
             <ul className="flex items-center mx-8 gap-4">
-              <li>
-                <a href="#">Home</a>
-              </li>
+            <Link to='/'>Home</Link>
               <li>
                 <a href="#">Files</a>
               </li>

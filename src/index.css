@@ -7,4 +7,14 @@
 body {
   font-family: 'Reddit Sans Condensed', sans-serif;
   /* font-family: "Teachers", sans-serif; */
+  background-color: #ECF0F1;
+}
+
+.backgroundShadow {
+  box-shadow: 6px 6px 0 0 #566573;
+}
+
+.backgroundShadow:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px 0 0 #566573;
 }
