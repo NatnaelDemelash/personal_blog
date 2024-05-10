@@ -15,7 +15,7 @@ const Navbar = () => {
   const formattedDate = currentDate.toLocaleDateString('en-us', options);
 
   return (
-    <header className="w-full h-[70px] z-50 p-2 bg-[#D6EAF8]">
+    <header className="fixed w-full h-[70px] z-50 p-2 bg-[#bfc9caeb] shadow-md">
       <div className="flex justify-between items-center px-4">
         <div className="flex items-center">
           <img
@@ -26,7 +26,7 @@ const Navbar = () => {
           />
           <nav>
             <ul className="flex items-center mx-8 gap-4">
-            <Link to='/'>Home</Link>
+              <Link to="/">Home</Link>
               <li>
                 <a href="#">Files</a>
               </li>
