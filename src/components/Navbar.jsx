@@ -1,8 +1,11 @@
 import logo from '../assets/logo-1.png';
 import { FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import Modal from './Modal';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
   const currentDate = new Date();
 
   const options = {
@@ -22,8 +25,12 @@ const Navbar = () => {
             src={logo}
             alt="logo"
             width={55}
-            className="border-2 border-slate-700 rounded-full"
+            className="border border-slate-700 rounded-full cursor-pointer"
+            onClick={() => {
+              setShowModal((prev) => !prev);
+            }}
           />
+          <div className="absolute top-16 ">{showModal && <Modal />}</div>
           <nav>
             <ul className="flex items-center mx-8 gap-4">
               <Link to="/">Home</Link>
