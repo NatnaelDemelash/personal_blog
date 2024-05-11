@@ -6,7 +6,7 @@ import WebLink from './WebLink';
 const HomePage = () => {
   return (
     <main className="relative top-16 container mx-auto px-4 pt-10">
-      <div className="flex gap-6">
+      <div className="flex flex-col sm:flex-row item-center gap-8">
         <section>
           <h1 className="uppercase font-semibold text-4xl mx-6">
             Recent Blog Posts
@@ -16,8 +16,8 @@ const HomePage = () => {
               key={blog.id}
               id={blog.id}
               title={blog.title}
-              desc={blog.desc}
               categories={blog.categories}
+              desc={blog.desc}
             />
           ))}
         </section>

@@ -13,15 +13,27 @@ const Modal = () => {
       </p>
       <h2 className="my-2 text-3xl font-bold">Let’s Connect</h2>
       <div className="flex flex-col gap-4 my-3 mx-2">
-        <Link className="flex items-center gap-2">
+        <Link
+          className="flex items-center gap-2"
+          to="https://github.com/NatnaelDemelash/"
+          target="_blank"
+        >
           <FiGithub size={25} />
           <p className="text-lg underline">GitHub</p>
         </Link>
-        <Link className="flex items-center gap-2">
+        <Link
+          className="flex items-center gap-2"
+          to="https://www.linkedin.com/in/natnaeldemelash/"
+          target="_blank"
+        >
           <PiLinkedinLogoBold size={25} />
           <p className="text-lg underline">LinkedIn</p>
         </Link>
-        <Link className="flex items-center gap-2">
+        <Link
+          className="flex items-center gap-2"
+          to="https://natnael-demelash.vercel.app/"
+          target="_blank"
+        >
           <LuGlobe size={25} />
           <p className="text-lg underline">Portfolio Website</p>
         </Link>
